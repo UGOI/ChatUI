@@ -1,0 +1,19 @@
+/* Sidebar.css */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+  
+.new-chat-button {
+  border-radius: 50%;
+  background-color: transparent; /* make button background transparent */
+  border: none; /* remove border */
+  padding: 5px 10px;
+}
+
+.new-chat-button img {
+  width: 20px; /* adjust this as needed */
+  height: 20px; /* adjust this as needed */
+}

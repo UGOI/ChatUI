@@ -1,0 +1,11 @@
+.back-button {
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Adjust the height as needed */
+    cursor: pointer;
+}
+
+.new-chat-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
