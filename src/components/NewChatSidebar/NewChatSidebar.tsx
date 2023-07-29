@@ -26,11 +26,20 @@ const NewChatSidebar: React.FC<NewChatSidebarProps> = ({ onBack }) => {
         <Conversation name="ClientName (YOU)">
           <Avatar src="https://placekitten.com/50/52" name="You"/>
         </Conversation>
+        <Conversation name="Friend 1">
+          <Avatar src="https://placekitten.com/50/53" name="Friend 1"/>
+        </Conversation>
+        <Conversation name="Friend 2">
+          <Avatar src="https://placekitten.com/50/54" name="Friend 2"/>
+        </Conversation>
+      </ConversationList>
 
-        {/* 
-        Insert the rest of the conversations here. They should be sorted alphabetically.
-        This can be done by sorting your contacts data before mapping it to Conversation components.
-        */}
+      <h3>ChatGPT</h3>
+
+      <ConversationList>
+        <Conversation name="Chat with ChatGPT" onClick={() => {/* Handle new chat with ChatGPT here */}}>
+          <Avatar src="https://placekitten.com/50/59" name="ChatGPT"/> {/* Replace with your preferred avatar */}
+        </Conversation>
       </ConversationList>
     </Sidebar>
   );

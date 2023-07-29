@@ -1,7 +1,7 @@
 # Dockerfile.dev
 
 # Base image
-FROM node:14-alpine
+FROM node:alpine3.18
 
 # Set working directory in the Docker container
 WORKDIR /app

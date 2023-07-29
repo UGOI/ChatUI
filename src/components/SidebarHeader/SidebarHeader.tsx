@@ -2,15 +2,17 @@
 import React from 'react';
 import { ConversationHeader, Avatar } from "@chatscope/chat-ui-kit-react";
 import { getEditIcon } from '../utils/icons';
-import { getClientAvatar } from '../utils/avatar';
+import { User } from '@chatscope/use-chat';
+
 
 interface SidebarHeaderProps {
     onNewChat: () => void;
+    user: User;
 }
 
-const SidebarHeader: React.FC<SidebarHeaderProps> = ({ onNewChat }) => {
+const SidebarHeader: React.FC<SidebarHeaderProps> = ({ onNewChat, user }) => {
   const EditIcon = getEditIcon();
-  const avatarSrc = getClientAvatar();
+  const avatarSrc = user.avatar;
 
   return (
     <ConversationHeader>
